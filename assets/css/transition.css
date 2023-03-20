@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aqua;
+    width: 100vw;
+    height: 100vh;
+    perspective: 200px;
+}
+.item{ 
+    width: 100px;
+    height: 200px;
+    background: rgb(206, 251, 5);
+    transition: all 1s ease;
+   
+}
+.item:hover{
+    /* transform: rotateZ(150deg); */
+    /* transform: translate(50px,50px); */
+    /* transform: scale(.2); */
+    /* transform: skew(20deg,40deg); */
+    /* transform: translateZ(100px); */
+    /* transform: translate3d(20px,20px,20px); */
+    transform: rotate3d(5,0,0,50deg);
+}

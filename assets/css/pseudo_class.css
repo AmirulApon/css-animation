@@ -1,0 +1,39 @@
+body {
+    background-color: azure;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    background-color: salmon;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  .text:hover {
+    color: rebeccapurple;
+    text-transform: uppercase;
+  }
+  .button:disabled {
+    cursor: not-allowed;
+  }
+  .input:focus {
+    border: none;
+    outline: none;
+    padding: 10px;
+  }
+  .list-item:first-child {
+    color: cadetblue;
+  }
+  .list-item:last-child {
+    color: yellow;
+  }
+  .list-item:nth-child(2) {
+    color: rgb(20, 147, 201);
+  }
+  .list-item:nth-child(3) {
+    color: rgb(209, 81, 209);
+  }

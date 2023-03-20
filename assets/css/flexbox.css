@@ -1,0 +1,35 @@
+body{
+    background-color: aqua;
+}
+.container{
+    background-color: #da3131 ;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.item-1{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+.item-2{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(24, 118, 169);
+}
+.item-3{
+    width: 100px;
+    height: 200px;
+    background-color: rgb(214, 89, 35);
+}
+.item-4{
+    width: 300px;
+    height: 100px;
+    background-color: rgb(255, 62, 152);
+}

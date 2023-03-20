@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(93, 195, 195);
+    width: 100vw;
+    height: 100vh;
+    perspective: 500px;
+    
+}
+.x{
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 51%;
+    background-color: black;
+}
+.y{
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 49%;
+    background-color: black;
+}
+.item{ 
+    width: 100px;
+    height: 100px;
+    background: rgb(206, 251, 5);
+    transition:all 1s ease;
+    transform-origin: top left;
+}
+.item:hover{
+   transform: rotate(50deg);         
+}
+
