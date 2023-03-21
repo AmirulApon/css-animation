@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(211, 157, 143);
+    
+}
+h1{
+    font-size: 150px;
+    font-weight: 800;
+    /* position: absolute; */
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 300px;
+    background-color: antiquewhite;
+}
+.text{
+    color: lightgray;
+    text-shadow: -2px -2px 0 #000,-2px -2px 0 #000,-2px -2px 0 #000,-2px -2px 0 #000;
+    position: absolute;
+}
+
+.text-liquid{
+    color: lightskyblue;
+    animation: wave 3s ease-in-out infinite;
+    position: absolute;
+}
+@keyframes wave{
+    0%,100%{
+        clip-path: polygon(50% 59%, 78% 51%, 100% 35%, 100% 99%, 0 100%, 0 33%, 20% 51%);
+    }
+    50%{
+        clip-path: polygon(46% 47%, 75% 51%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 20% 51%);
+
+    }
+}
