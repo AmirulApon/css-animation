@@ -1,0 +1,89 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+  height: 60px;
+  width: 60px;
+  position: relative;
+  
+  
+}
+
+.main-icon {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  position: absolute;
+  color: #ffffff;
+  transition: all .5s ease-in-out;
+}
+.button {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: slateblue;
+  color: #fff;
+  position: absolute;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+.button:nth-child(1) {
+  top: 0;
+  left: 0;
+  border-radius: 10px 0 0 0;
+}
+.button:nth-child(2) {
+  top: 0;
+  right: 0;
+  border-radius: 0 10px 0  0;
+}
+.button:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  border-radius: 0px 0 0px 10px;
+}
+.button:nth-child(4) {
+    bottom: 0;
+    right: 0;
+    border-radius:0 0 10px  0;
+}
+.icon{
+    opacity: 0;
+}
+.container:hover .icon{
+    opacity: 1;
+}
+.container:hover .main-icon{
+    transform: rotate(45deg) scale(5);
+}
+.container:hover .button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.container:hover .button:nth-child(1){
+   transform: translate(0px,-60px);
+}
+.container:hover .button:nth-child(2){
+   transform: translate(60px,0px);
+}
+.container:hover .button:nth-child(3){
+   transform: translate(-0px,60px);
+}
+.container:hover .button:nth-child(4){
+   transform: translate(-60px,-0px);
+}
